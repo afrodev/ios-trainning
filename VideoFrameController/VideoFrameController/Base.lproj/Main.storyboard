@@ -28,16 +28,10 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnx-2t-io1">
-                                <rect key="frame" x="0.0" y="79" width="1024" height="588"/>
+                                <rect key="frame" x="0.0" y="96" width="1024" height="372"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-kK-imP">
-                                <rect key="frame" x="13" y="703" width="789" height="31"/>
-                                <connections>
-                                    <action selector="slideValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vgw-yL-MWt"/>
-                                </connections>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QJ-z1-Hqv">
                                 <rect key="frame" x="833" y="669" width="171" height="41"/>
                                 <color key="backgroundColor" red="0.24968540268456377" green="0.15022021812080469" blue="0.8783819211409396" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,15 +52,26 @@
                                     <action selector="pauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqN-Xb-awz"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.55555500000000002" translatesAutoresizingMaskIntoConstraints="NO" id="TyA-ml-Tj1">
+                                <rect key="frame" x="25" y="630" width="777" height="2"/>
+                            </progressView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-kK-imP">
+                                <rect key="frame" x="15" y="680" width="789" height="31"/>
+                                <connections>
+                                    <action selector="slideValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vgw-yL-MWt"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="buttonChooseVideo" destination="jT1-SW-oBA" id="eGr-A9-oOT"/>
+                        <outlet property="progressBar" destination="TyA-ml-Tj1" id="uvH-U0-RQF"/>
                         <outlet property="sliderVideo" destination="oUG-kK-imP" id="TDT-ej-AD2"/>
-                        <outlet property="viewVideo" destination="nnx-2t-io1" id="4uk-4E-j44"/>
+                        <outlet property="viewVideo" destination="nnx-2t-io1" id="96n-La-ILp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
