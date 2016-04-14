@@ -55,7 +55,7 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.55555500000000002" translatesAutoresizingMaskIntoConstraints="NO" id="TyA-ml-Tj1">
                                 <rect key="frame" x="25" y="630" width="777" height="2"/>
                             </progressView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-kK-imP">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-kK-imP">
                                 <rect key="frame" x="15" y="680" width="789" height="31"/>
                                 <connections>
                                     <action selector="slideValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vgw-yL-MWt"/>
