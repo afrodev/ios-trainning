@@ -1,0 +1,22 @@
+import facebook
+
+# userdata = {"message": "pegou", "place": "298042960354301"}
+
+# Pegar o token quando o eze entra
+# token caso de merda - EAAWajIcUJAgBAKvLmCTxEEWd51gudNRwwwZC1md8nlttxrznK5knCidraWgIyibA2v3TRLSHYdJy8BKtGpuEoFZAI5E2SRTQS8C83HXZC5WhBmnBqDzZBO4HwdTzniTryvcqX47TfxxjoCbezCqloh4uRTfArNdTouNhVXv1zwZDZD
+graph = facebook.GraphAPI(access_token='EAAWajIcUJAgBAKvLmCTxEEWd51gudNRwwwZC1md8nlttxrznK5knCidraWgIyibA2v3TRLSHYdJy8BKtGpuEoFZAI5E2SRTQS8C83HXZC5WhBmnBqDzZBO4HwdTzniTryvcqX47TfxxjoCbezCqloh4uRTfArNdTouNhVXv1zwZDZD', version='2.2')
+
+# Esse da pra postar 
+# graph.put_object(parent_object='me', connection_name='feed',
+#                  message='Muito legal!', place='298042960354301')
+
+# Checkin produto
+# graph.put_object(parent_object='me', connection_name='feed',
+#                  message='Humberto acaba de fazer uma compra na @AppleUS', place='298042960354301')
+
+
+graph.put_object(parent_object='me', connection_name='/137522203306294/ratings',
+                 message='Humberto acaba de fazer uma compra na @AppleUS', place='298042960354301')
+
+
+print("TA FUNCIONANDO")
