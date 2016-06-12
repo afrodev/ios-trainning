@@ -43,5 +43,5 @@ def get_fb_token(app_id, app_secret):
     return result
 
 
-
-
+ID - 1726840197554214
+app scret - 2f9069a3b3360dfa1396bff367f71b8b
